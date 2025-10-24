@@ -19,11 +19,11 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://project-manager-demo.vercel.app"
+    "https://project-manager-demo.vercel.app",
+    "https://project-manager-frontend-qh2r4sli1-datamens-projects-97c3b71c.vercel.app"
   ],
   credentials: true,
 }));
-
 app.use('/api/auth' , authRouter)
 app.use('/api/project' , projectRouter)
 app.use('/api/task' ,taskRouter)
